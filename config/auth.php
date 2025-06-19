@@ -44,7 +44,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | User Providers
+    | Users Providers
     |--------------------------------------------------------------------------
     |
     | All authentication guards have a user provider, which defines how the
@@ -62,7 +62,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', \App\User\Models\User::class),
+            'model' => env('AUTH_MODEL', \App\Users\Models\User::class),
         ],
 
         // 'users' => [

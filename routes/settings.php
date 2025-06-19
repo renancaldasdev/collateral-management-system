@@ -1,7 +1,7 @@
 <?php
 
-use App\User\Http\Controllers\Settings\PasswordController;
-use App\User\Http\Controllers\Settings\ProfileController;
+use App\Users\Http\Controllers\Settings\PasswordController;
+use App\Users\Http\Controllers\Settings\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 

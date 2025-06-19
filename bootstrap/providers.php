@@ -2,5 +2,6 @@
 
 return [
     App\Base\Providers\AppServiceProvider::class,
-    App\User\Providers\UserServiceProvider::class,
+    App\Users\Providers\UserServiceProvider::class,
+    App\Categories\Providers\CategoryServiceProvider::class,
 ];
