@@ -3,7 +3,7 @@
 namespace App\Users\Http\Controllers\Settings;
 
 use App\Base\Http\Controllers\Controller;
-use App\User\Http\Requests\Settings\ProfileUpdateRequest;
+use App\Users\Http\Requests\Settings\ProfileUpdateRequest;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
