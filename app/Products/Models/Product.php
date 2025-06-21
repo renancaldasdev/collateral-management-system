@@ -1,12 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Products\Models;
 
 use App\Categories\Models\Category;
 use App\Users\Models\User;
+use App\Warranties\Models\Warranty;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Product extends Model
 {
@@ -39,4 +44,10 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function warranty(): HasOne
+    {
+        return $this->hasOne(Warranty::class);
+    }
+
 }

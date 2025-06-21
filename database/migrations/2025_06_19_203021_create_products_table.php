@@ -19,9 +19,6 @@ return new class extends Migration {
             $table->string('model');
             $table->date('purchase_date');
             $table->string('place_of_purchase')->nullable();
-            $table->unsignedSmallInteger('warranty_period');
-            $table->string('invoice_file_path');
-            $table->string('observation')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
